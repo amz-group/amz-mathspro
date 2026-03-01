@@ -223,7 +223,7 @@ opacity: 0; transition: opacity 0.3s;
 .topic-card:hover::before { opacity: 0.06; }
 .topic-card:hover .tc-icon { transform: scale(1.1); }
 
-.tc-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; transition: transform 0.3s; position: relative; z-index: 1; }
+.tc-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; transition: transform 0.3s; position: relative; z-index: 1; font-family: “Apple Color Emoji”, “Segoe UI Emoji”, “Noto Color Emoji”, sans-serif; line-height: 1; }
 .tc-cat { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.35rem; position: relative; z-index: 1; }
 .tc-title { font-size: 0.92rem; font-weight: 700; color: var(–text); margin-bottom: 0.3rem; position: relative; z-index: 1; }
 .tc-desc { font-size: 0.78rem; color: var(–text2); font-weight: 400; position: relative; z-index: 1; }
@@ -422,10 +422,11 @@ grid-template-columns: 1fr 1fr;
 gap: 0.75rem;
 padding: 1rem;
 }
-.topic-card { padding: 1.1rem; }
-.tc-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
-.tc-title { font-size: 0.85rem; }
-.tc-desc { font-size: 0.74rem; }
+.topic-card { padding: 1.2rem 1rem; min-height: 140px; }
+.tc-icon { font-size: 1.8rem; margin-bottom: 0.6rem; font-family: “Apple Color Emoji”, “Segoe UI Emoji”, “Noto Color Emoji”, sans-serif; }
+.tc-title { font-size: 0.82rem; line-height: 1.35; }
+.tc-desc { font-size: 0.72rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tc-arrow { display: none; }
 .hero-title { font-size: 1.9rem; }
 .section-page { padding: 1.5rem 1rem 3rem; }
 .solver-card { padding: 1.3rem; }
