@@ -208,11 +208,14 @@ animation: fadeUp 0.8s ease 0.4s both;
 }
 
 .topic-card {
-background: var(–card);
-border: 1px solid var(–border);
+background: #162035;
+background: linear-gradient(145deg, #1a2640 0%, #111d33 100%);
+border: 1px solid #1e3256;
 border-radius: 16px; padding: 1.4rem;
 cursor: pointer; transition: all 0.3s;
 position: relative; overflow: hidden;
+-webkit-backdrop-filter: none;
+backdrop-filter: none;
 }
 .topic-card::before {
 content: ‘’; position: absolute; inset: 0;
@@ -259,8 +262,9 @@ cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 
 
 /* ── SOLVER CARD ── */
 .solver-card {
-background: var(–card);
-border: 1px solid var(–border);
+background: #162035;
+background: linear-gradient(145deg, #1a2640 0%, #111d33 100%);
+border: 1px solid #1e3256;
 border-radius: 20px; padding: 2rem; margin-bottom: 1.5rem;
 }
 .solver-title { font-size: 1rem; font-weight: 700; color: var(–accent); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -269,7 +273,7 @@ label.field-label { display: block; font-size: 0.8rem; font-weight: 600; color: 
 
 input[type=“text”], input[type=“number”], select {
 width: 100%; padding: 0.85rem 1.1rem;
-background: var(–surface); border: 1.5px solid var(–border);
+background: #111d33; border: 1.5px solid #1e3256;
 border-radius: 12px; color: var(–text);
 font-family: ‘JetBrains Mono’, monospace; font-size: 1rem;
 transition: all 0.3s; direction: ltr; text-align: center;
@@ -317,16 +321,17 @@ cursor: pointer; transition: all 0.2s; direction: ltr;
 /* ── RESULT ── */
 .result-wrap { margin-top: 1.5rem; }
 .result-box {
-background: linear-gradient(135deg, rgba(16,185,129,0.06), rgba(0,212,255,0.06));
-border: 1.5px solid rgba(16,185,129,0.25);
+background: linear-gradient(135deg, rgba(16,185,129,0.10), rgba(0,212,255,0.08));
+border: 1.5px solid rgba(16,185,129,0.30);
 border-radius: 16px; padding: 1.5rem; overflow: hidden;
+background-color: #0f2a22;
 }
 .result-header { font-size: 0.82rem; font-weight: 700; color: var(–accent3); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
 
 .step-list { display: flex; flex-direction: column; gap: 0; }
 .step-item {
 display: flex; align-items: flex-start; gap: 1rem;
-padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.07);
 animation: stepIn 0.4s ease both;
 }
 .step-item:last-child { border-bottom: none; }
