@@ -36,13 +36,28 @@ min-height: 100vh;
 overflow-x: hidden;
 }
 
-/* ── BACKGROUND CANVAS ── */
+/* ── BACKGROUND ── */
+body::after {
+content: ‘’;
+position: fixed;
+inset: 0;
+z-index: 0;
+pointer-events: none;
+background:
+radial-gradient(ellipse at 15% 20%, rgba(0,212,255,0.10) 0%, transparent 45%),
+radial-gradient(ellipse at 85% 75%, rgba(124,58,237,0.10) 0%, transparent 45%),
+radial-gradient(ellipse at 50% 50%, rgba(16,185,129,0.05) 0%, transparent 60%);
+}
+
 #bg-canvas {
 position: fixed;
 inset: 0;
 z-index: 0;
 pointer-events: none;
 opacity: 0.5;
+}
+@media (max-width: 768px) {
+#bg-canvas { display: none; }
 }
 
 /* ── NAVBAR ── */
@@ -409,13 +424,35 @@ font-size: 0.88rem; color: var(–text2); line-height: 1.7;
 .hamburger { display: flex; }
 .input-row { grid-template-columns: 1fr; }
 .input-row3 { grid-template-columns: 1fr 1fr; }
-.topics-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; padding: 1rem; }
+.topics-grid {
+grid-template-columns: 1fr 1fr;
+gap: 0.75rem;
+padding: 1rem;
+}
+.topic-card { padding: 1.1rem; }
+.tc-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.tc-title { font-size: 0.85rem; }
+.tc-desc { font-size: 0.74rem; }
 .hero-title { font-size: 1.9rem; }
 .section-page { padding: 1.5rem 1rem 3rem; }
+.solver-card { padding: 1.3rem; }
+.page-title { font-size: 1.3rem; }
+.page-icon { font-size: 1.8rem; }
+.final-answer { font-size: 1.1rem; }
+.nav-logo-text { font-size: 1.1rem; }
+h1 { font-size: clamp(1.7rem, 5vw, 2.5rem) !important; }
 }
 @media (max-width: 480px) {
 nav { padding: 0 1rem; }
 .input-row3 { grid-template-columns: 1fr; }
+.topics-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; padding: 0.75rem; }
+.topic-card { padding: 1rem 0.85rem; }
+.size-selector { flex-wrap: wrap; }
+input[type=text], input[type=number], select { font-size: 0.95rem; padding: 0.75rem 0.85rem; }
+.solve-btn { font-size: 0.95rem; padding: 0.85rem; }
+.step-val { font-size: 0.82rem; word-break: break-all; }
+.examples-row { gap: 0.35rem; }
+.ex-chip { font-size: 0.72rem; padding: 0.25rem 0.65rem; }
 }
 </style>
 
