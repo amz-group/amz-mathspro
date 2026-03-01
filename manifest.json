@@ -1,6 +1,6 @@
 {
   "name": "MathKu — چارەساری بیرکاری",
-  "short_name": "MathKu",
+  "short_name": "AMZ Mathematics",
   "description": "چارەساری هاوکیشە بە هەنگاو هەنگاو",
   "start_url": "./MathKu-Solver.html",
   "display": "standalone",
@@ -11,13 +11,13 @@
   "dir": "rtl",
   "icons": [
     {
-      "src": "535D285A-152D-422A-A347-49B18B206BF9.png",
+      "src": "1D2018C3-D0A3-4DE6-AB23-CD911DCA0C82.jpeg",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "535D285A-152D-422A-A347-49B18B206BF9.png",
+      "src": "1D2018C3-D0A3-4DE6-AB23-CD911DCA0C82.jpeg",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
